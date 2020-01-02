@@ -1,0 +1,178 @@
+body {	
+	height: 100%;
+}
+
+#newGameButtom {
+	display: block;
+	width: 200px;
+	height: 40px;
+	border: 2px solid black;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 1.5em;
+	margin: auto;
+}
+
+.clueExplained {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 20% 70%;
+}
+
+.description {
+	align-self: center;
+}
+
+section {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+#board {
+	margin: 40px;
+	width: 720px;
+	height: 720px;
+	border: 2px solid black;
+	box-sizing: content-box;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+#clues {
+	margin: 40px;
+	width: 800px;
+	height: 720px;
+	position: relative;
+}
+
+
+.cell {
+	border: 2px solid gray;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.cell.flip {
+	font-size: 4em;
+	text-align: center;
+  	transform: rotateY(360deg);
+  	transition: .3s;
+  	cursor: context-menu;
+
+}
+
+.choiceDiv {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	justify-content: center;
+}
+
+#horizontalClues {
+	width: 100%;
+	max-height: 600px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap; 
+}
+
+#verticalClues {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap-reverse; /* fills the bottom row first */
+	position: absolute;
+
+	bottom: 0;
+	left: 0;
+}
+
+.horClue {
+	width: 200px;
+	height: 65px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.vertClue {
+	margin: 0px 3px;
+	width: 50px;
+	height: 125px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+
+}
+.choice {
+	line-height: 54px;
+	font-size: 1.2em;
+	box-sizing: border-box;
+	border: 1px solid gray;
+	border-radius: 10px;
+	margin: 2px;
+	cursor: context-menu;
+	color: gray;
+	position: absolute;
+}
+
+.clueCell {
+	width: 50px;
+	height: 60px;
+	line-height: 58px;
+	font-size: 1.5em;
+	box-sizing: border-box;
+	cursor: context-menu;
+	text-align: center;
+	font-weight: bold;
+	border: 1px solid gray;
+	color: black;
+}
+
+.clueDone {
+	opacity: .2;
+}
+
+.choice:hover {
+	border: 2px solid gray;
+	color: black;
+	font-weight: bold;
+  	transition: transform .2s;
+}
+
+/* absolute positioning of choice cards */
+.choice0 {
+	left: 1px;
+	top: 1px;
+}
+
+.choice1 {
+	left: 40px;
+	top: 1px;
+}
+
+.choice2 {
+	right: 1px;
+	top: 1px;
+}
+
+.choice3 {
+	left: 1px;
+	bottom: 1px;
+}
+
+.choice4 {
+	left: 40px;
+	bottom: 1px;
+}
+
+.choice5 {
+	right: 1px;
+	bottom: 1px;
+}

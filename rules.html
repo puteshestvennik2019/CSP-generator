@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">  
+    <title>Einstein Puzzle - rules</title> 
+  </head>
+  <body>
+  	<h2>These are the basic rules for v1.0 of this game</h2>
+  	<h4>There are four type of clues to solve the puzzle:</h4>
+  	<div class="clueExplained">
+  		<div class="horClue">
+  			<div class="clueCell">D</div><div class="clueCell">I</div><div class="clueCell">%</div>
+  		</div>
+	  	<div class="description">
+  			<p>Three neighbouring cells of unknown direction (the middle cell is always between the other two, but the left/right neighbours may be presented in wrong or in correct order)</p>
+  		</div>
+	</div>
+  	<div class="clueExplained">
+  		<div class="horClue">
+  			<div class="clueCell">D</div><div class="clueCell" style="color: red; border: none;"><|></div><div class="clueCell">%</div>
+  		</div>
+	  	<div class="description">
+  			<p>Two neighbouring cells of unknown direction (the clue tells us they share one edge, but doesn't reveal if A has B to the left or to the right)</p>
+  		</div>
+  	</div>
+  	<div class="clueExplained">
+  		<div class="horClue">
+  			<div class="clueCell">D</div><div class="clueCell" style="color: red; border: none;">:::::</div><div class="clueCell">%</div>
+  		</div>
+	  	<div class="description">
+  			<p>Two cells of certain direction (cell on the left is always to the left of the other one, however, they may or may NOT share edge</p>
+  		</div>
+  	</div>
+  	<div class="clueExplained">
+  		<div class="vertClue">
+  			<div class="clueCell">D</div><div class="clueCell">%</div>
+  		</div>
+	  	<div class="description">
+  			<p>Vertical clues - both elements appear in the same column</p>
+  		</div>
+  	</div>
+  	
+  	<h4>Basic controls:</h4>
+  	<p>Clues on the right can be toggled on/off for convenience.</p>
+  	<p>For the main board, use the right mouse click to deselect items you have eliminated.</p>
+  	<p>Analogically, use the left click, once you are sure your choice is correct.</p>
+  	<h4>IMPORTANT! Currently, the game works correctly only in resolution 1920x1080 and above.</h4>
+  	<p>Happy playing! Feel free to submit your feedback and suggestions for improvement. Many more features are to come in the next release</p>
+  </body>
+</html>
